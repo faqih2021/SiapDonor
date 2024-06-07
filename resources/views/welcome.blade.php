@@ -16,9 +16,14 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8">
-                                    <p
-                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                    @auth
+                                        <h1>Welcome, {{ Auth::user()->name }}</h1>
+                                    @else
+                                        <h1>Welcome, Guest</h1>
+                                    @endauth
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                                         Welcome to SiapDonor</p>
+
                                     <h1 class="display-1 mb-4 animated slideInDown">Your Financial Status Is Our Goal
                                     </h1>
                                 </div>
