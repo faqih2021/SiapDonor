@@ -91,6 +91,11 @@
                     <h1 class="h3 mb-2 text-gray-800">Tables</h1>
                     <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables</a>.</p>
+                        <li class="list-inline-item">
+                            <a href="{{ route('table.exportPdf') }}" class="btn btn-outline-danger">
+                                <i class="bi bi-download me-1"></i> to PDF
+                            </a>
+                        </li>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
